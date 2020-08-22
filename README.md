@@ -1,6 +1,6 @@
 # MERN CRUD
 
-This is a full stack file upload form, build on Node Express MongoDb Mongoose multer on server side and React/Redux on client side and A REST api to implement functionality
+This is a full-stack file upload form, build on Node Express MongoDB Mongoose multer on server-side and React/Redux on client-side and A REST API to implement functionality
 
 ## Note
 
