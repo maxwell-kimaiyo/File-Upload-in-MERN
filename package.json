@@ -1,0 +1,33 @@
+{
+  "name": "Backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "start": "nodemon --watch server --exec babel-node server/App.js",
+    "build": "rm -rf dist && babel backend -d dist",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+ 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20",
+    "multer": "^1.4.2",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "nodemo": "^1.0.0",
+    "nodemon": "^2.0.4"
+  }
+}
